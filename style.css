@@ -1,0 +1,133 @@
+:root {
+    --verde-escuro: #1b5e20;
+    --verde-principal: #2e7d32;
+    --verde-claro: #e8f5e9;
+    --verde-caixa: #dcedc8;
+    --branco: #ffffff;
+    --texto: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--verde-claro);
+    color: var(--texto);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+nav {
+    background-color: var(--verde-principal);
+    padding: 0.8rem;
+    text-align: center;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex: 1;
+}
+
+.cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card-nav {
+    background-color: var(--branco);
+    border: 3px solid var(--verde-principal);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--verde-escuro);
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+    transition: transform 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.card-nav:hover {
+    transform: translateY(-4px);
+    background-color: var(--verde-principal);
+    color: var(--branco);
+}
+
+.box-foto {
+    background-color: var(--verde-caixa);
+    border: 2px dashed var(--verde-principal);
+    border-radius: 8px;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--verde-escuro);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-info {
+    background-color: var(--branco);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    margin-bottom: 1.5rem;
+}
+
+.grid-duplo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+ul.lista-itens {
+    list-style-type: square;
+    padding-left: 1.5rem;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
