@@ -97,11 +97,33 @@ nav a:hover {
     border-radius: 8px;
     min-height: 180px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: var(--verde-escuro);
     font-weight: bold;
     margin-bottom: 1rem;
+
+.etapas-inicias {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.foto-etapas {
+width: 60% !impoprtant;
+max-width: 450px;
+height: auto;
+border-radius: 10px;
+display: block;
+margin: 0 auto;
+object-fit: contain;
+}
+
+.etapas-inicias p {
+    text-align: justify;
+line-height: 1.6
 }
 
 .card-info {
